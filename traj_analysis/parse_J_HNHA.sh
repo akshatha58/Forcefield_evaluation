@@ -1,4 +1,4 @@
-# NMR.sh
+# parse_J_HNHA.sh
 # Akshatha
 # 3 September 2023
 
