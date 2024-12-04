@@ -55,6 +55,10 @@ do
 done < $pdbfile".mmcif"
 
 #################################################### ADDING OFFSETS TO THE RESIDUE NUMBERS #######################################################################################################################
+# append Helices and corresponding residue list to the second line of PDBID_offsets.txt
+
+echo "Helices " ${helix_residues[@]} >> $pdbfile"_ss.txt"
+echo "Sheets " ${sheet_residues[@]} >> $pdbfile"_ss.txt"
 
 echo "Adding offsets ..."
 
@@ -67,6 +71,7 @@ done
 for i in "${!sheet_residues[@]}"; do
     sheet_residues[$i]=$((${sheet_residues[$i]} + offset))
 done
+
 
 # print helix_residues onto terminal
 echo " "
