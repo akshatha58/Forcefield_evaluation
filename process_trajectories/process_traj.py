@@ -44,7 +44,7 @@ with mda.Writer(mdmod_gro, n_atoms=u.atoms.n_atoms) as W:
         # Adjust residue numbers to start from 1
         for i, residue in enumerate(u.residues):
             residue.resid = i + 1
-            if residue.resname == "HIP" or residue.resname == "HID" or residue.resname == "HIE":
+            if residue.resname in ["HIP", "HID", "HIE", "HSD", "HSP"]:
                 residue.resname = "HIS"
             if residue.resname == "GLH":
                 residue.resname = "GLU"
@@ -75,7 +75,7 @@ with mda.Writer(mdtrajmod_xtc, n_atoms=u.atoms.n_atoms) as W:
         for i, residue in enumerate(u.residues):
             residue.resid = i + 1
             # If the residue name is "HIP", change it to "HIS"
-            if residue.resname == "HIP" or residue.resname == "HID" or residue.resname == "HIE":
+            if residue.resname in ["HIP", "HID", "HIE", "HSD", "HSP"]:
                 residue.resname = "HIS"
             if residue.resname == "GLH":
                 residue.resname = "GLU"
