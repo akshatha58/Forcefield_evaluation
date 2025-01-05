@@ -7,8 +7,4 @@ Folders for various workflows:
    a. Has codes to tag secondary structure elements in the topology files
    b. Codes for modifying the AMBER ff99SB-ILDN force field with tagged atom types and residues
 
-2. traj_analysis
-   a. Has codes for processing ff trajectories, such as extracting a subset of frames, untagging residues and changing file formats
-   b. Codes for automating various types of calculations and trajectory analyses
-   c. Plotting files (matplotlib)
-   d. Custom xmgrace plot formats
+
