@@ -29,12 +29,14 @@ $GROMACS rama -f md.xtc -s md.tpr -o $results_path/rama.xvg -b 500000 -dt 5000
 
 # RMSD
 printf "4 4" | $GROMACS rms -f md.xtc -s md.tpr -o $results_path/rmsd.xvg -tu ns
-
+sed -i '1,18d' "$results_path/rmsd_all.xvg"
 # Radius of gyration
 printf "1" | $GROMACS gyrate -f md.xtc -s md.tpr -o $results_path/rg.xvg -tu ns
+sed -i '1,27d' "$results_path/rg_all.xvg"
 
 # RMSF
 printf "4" | $GROMACS rmsf -f md.xtc -s md.tpr -res -o $results_path/rmsf_backbone.xvg
+sed -i '1,17d' "$results_path/rmsf_backbone.xvg"
 
 ./rmsd_ss.sh $path
 
