@@ -16,11 +16,11 @@ Directory format for simulation files used in all codes:
 
 Directory format created during analysis:
 <forcefield_name> / <pdbid> / Analysis / basic_properties
- &emsp &emsp &emsp                     / clusters
-                                       / processed_trajs
-                                       / NMR_analysis
-                                                      / chem_shifts
-                                                      / J3_constants
+<forcefield_name> / <pdbid> / Analysis / clusters
+<forcefield_name> / <pdbid> / Analysis / processed_trajs
+<forcefield_name> / <pdbid> / Analysis/ NMR_analysis
+<forcefield_name> / <pdbid> / Analysis/ NMR_analysis / chem_shifts
+<forcefield_name> / <pdbid> / Analysis/ NMR_analysis / J3_constants
                                        
 
    
