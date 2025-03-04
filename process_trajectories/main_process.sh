@@ -6,11 +6,13 @@
 
 # give permissions (first time execution)
 chmod +x convert_fileformats.sh
+chmod +x convert_fileformats_charmm.sh
 chmod +x modify_grofile.sh
 chmod +x process_traj.py
 chmod +x visualise.sh
 
-# ./convert_fileformats.sh <directory>
+# ./convert_fileformats.sh <directory> <ff>
+# ff: amber or charmm
 
 # Standard paths
 sourcepath=$(pwd)
@@ -21,8 +23,14 @@ pdb=$(basename $pdbpath)
 pdb="${pdb%.*}"
 
 echo $pdb
-
 cd $sourcepath
 
-./convert_fileformats.sh $pdb $pdbpath
+if [ "$ff" == 'amber' ] 
+then
+    ./convert_fileformats.sh $pdb $pdbpath
+elif [ "$ff" == 'charmm' ]
+then
+    ./convert_fileformats_charmm.sh $pdb $pdbpath
+fi
+
 ./visualise.sh $pdbpath
