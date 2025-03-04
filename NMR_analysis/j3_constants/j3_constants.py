@@ -1,6 +1,10 @@
 """
+j3_constants.py
+
 Updated code for calculating J3 constants from the trajectory
 Uses mdtraj (trajectories without water)
+
+python3 j3_constants.py <path> <offsets>
 """
 
 import mdtraj
