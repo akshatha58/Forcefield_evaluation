@@ -12,9 +12,11 @@ Data directories required:
 3. MD2NMR_amber and MD2NMR_charmm: Get from the repository: https://github.com/dkoes/MD2NMR 
 
 Directory format for simulation files used in all codes:
-<forcefield_name> / <pdbid> / *all simulation input files 
+
+<forcefield_name> / <pdbid> / all simulation input files 
 
 Directory format created during analysis:
+
 <forcefield_name> / <pdbid> / Analysis / basic_properties
 <forcefield_name> / <pdbid> / Analysis / clusters
 <forcefield_name> / <pdbid> / Analysis / processed_trajs
