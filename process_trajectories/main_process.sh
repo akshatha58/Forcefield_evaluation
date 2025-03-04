@@ -21,6 +21,7 @@ sourcepath=$(pwd)
 pdbpath=$1
 pdb=$(basename $pdbpath)
 pdb="${pdb%.*}"
+ff=$2
 
 echo $pdb
 cd $sourcepath
