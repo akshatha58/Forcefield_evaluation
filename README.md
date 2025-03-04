@@ -12,6 +12,9 @@ Codes for implementing workflows involved in running simulations, processing tra
 3. MD2NMR: Get from the repository: https://github.com/dkoes/MD2NMR
    Two separate repositories are created, one each for Amber and CHARMM (MD2NMR_amber and MD2NMR_charmm). dump.py and shifts.py have been modified to suit the use cases in this study. Get the other files and dictionaries from the above repository into each of these folders.
 
+## Softwares/libraries required
+GROMACS, DSSP, mdtraj, MDAnalysis, VMD or Pymol, Biopython, nmrpystar
+
 ## Directory format for simulation files used in all codes:
 
 <forcefield_name> / <pdb_id> / all simulation input files 
