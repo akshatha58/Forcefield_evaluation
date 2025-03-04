@@ -1,9 +1,12 @@
 # rmsd_ss.sh
 # 4 December 2024
 
+# ./rmsd_ss.sh <directory where trajectory is stored>
+
 path=$1
 pdb=$(basename $path)
 pdb=${pdb%.pdb}
+GROMACS=/usr/local/gromacs/bin/gmx
 
 process_trajpath=$path/Analysis/processed_trajs
 results_path=$path/Analysis/basic_properties
@@ -12,7 +15,7 @@ results_path=$path/Analysis/basic_properties
 python3 ndx_groups.py $path
 
 cd $path
-/usr/local/gromacs/bin/gmx make_ndx -f md.gro -o index.ndx
+$GROMACS make_ndx -f md.gro -o index.ndx
 
 # Index grouping syntaxes (sample: type the following in the index file, and uncomment the last three lines of code)
 # r 11-15                   residue numbers 11 to 15 (get groups from groups.txt)
@@ -23,6 +26,6 @@ cd $path
 # q
 
 # Crosscheck group numbers before executing
-# printf "18 18" | /usr/local/gromacs/bin/gmx rms -f md.xtc -s md.tpr -o $results_path/rmsd_helix.xvg -tu ns -n index.ndx
-# printf "19 19" | /usr/local/gromacs/bin/gmx rms -f md.xtc -s md.tpr -o $results_path/rmsd_sheet.xvg -tu ns -n index.ndx
-# printf "20 20" | /usr/local/gromacs/bin/gmx rms -f md.xtc -s md.tpr -o $results_path/rmsd_flexible.xvg -tu ns -n index.ndx
+$GROMACS rms -f md.xtc -s md.tpr -o $results_path/rmsd_helix.xvg -tu ns -n index.ndx
+$GROMACS rms -f md.xtc -s md.tpr -o $results_path/rmsd_sheet.xvg -tu ns -n index.ndx
+$GROMACS rms -f md.xtc -s md.tpr -o $results_path/rmsd_flexible.xvg -tu ns -n index.ndx
