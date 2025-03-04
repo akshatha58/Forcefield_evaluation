@@ -5,6 +5,7 @@ Akshatha
 
 Imports J3 data from MD and experiment and compares them (residue-wise), with std devs
 
+python3 compare_J3.py <path>
 """
 import pandas as pd
 import matplotlib.pyplot as plt
