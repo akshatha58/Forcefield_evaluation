@@ -1,25 +1,26 @@
-# Modular-Fold-based-FF
-Codes for implementing workflows involved in developing fold-based force field parameters for globular proteins
+# Forcefield evaluation
+Codes for implementing workflows involved in running simulations, processing trajectories, and analysing data for various force field/water model combinations.
 
-Folders for various workflows:
+Main directories: 
+1. process_input_files: Has code for processing topology files to tag residues and atom type
+2. input_files: Has .mdp files and a script for running gromacs commands
+3. Analysis_codes: Has codes to analyse structural, thermodynamic, and NMR data for all systems
 
-1. process_input_files
-   a. Has codes to tag secondary structure elements in the topology files created by pdb2gmx
-      (Needs installation of DSSP and BioPython modules)
-```
-./TRA.sh <pdbfilepath> <topfilepath>
-```
-   b. Codes for modifying the AMBER ff99SB-ILDN force field with tagged atom types and residues (also tags waters and metals, which need to be removed)
-```
-./modify_ffnonbonded.sh <atomtypespath> <ffnonbondedpath>
-```
-   c. Adds tags for bonds, angles, dihedrals (copy block of lines to an input file, copy back the modified block to the corresponding location in the ffbonded.itp file)
-   
-```
-./modify_ffbonded.sh <inputfilepath> <outputfilepath> <paramtype>
-# <paramtype> can be "BONDS" "ANGLES" or "DIHEDRALS"
-``` 
+Data directories required:
+1. NMR_BMRB: Store BMRB Files in STAR format for each protein
+2. offset_lists and ss_lists: Store secondary structure information obtained from the DSSP (Helix and sheet residues for various proteins)
+3. MD2NMR_amber and MD2NMR_charmm: Get from the repository: https://github.com/dkoes/MD2NMR 
 
-2. process_trajectories
-   -- Has codes to remove ss tags and renumber residues from 1 for ease of processing
+Directory format for simulation files used in all codes:
+<forcefield_name> / <pdbid> / *all simulation input files 
+
+Directory format created during analysis:
+<forcefield_name> / <pdbid> / Analysis / basic_properties
+                                       / clusters
+                                       / processed_trajs
+                                       / NMR_analysis
+                                                      / chem_shifts
+                                                      / J3_constants
+                                       
+
    
