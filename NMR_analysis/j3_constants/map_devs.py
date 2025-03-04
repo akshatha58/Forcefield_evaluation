@@ -5,7 +5,10 @@ map_devs.py
 Maps residues that have an absolute value deviation in J3 coupling constant
 To be used in pymol functionality
 
-python3 map_devs.py <path>
+Saves a pickle file as a dictionary: protein name mapped to an array of residue-wise relative errors
+Save one .pkl file for each force field/water model combination. 
+
+python3 map_devs.py <path of ff directories>
 """
 import pandas as pd
 import numpy as np
@@ -14,7 +17,7 @@ import pickle
 
 basepath=sys.argv[1]
 
-sys.path.insert(0, basepath+'/Analysis_optimised/plotting_codes')
+sys.path.insert(0, basepath+'/../Analysis_codes/plotting_codes')
 
 import global_plots as gplt
 
@@ -22,7 +25,7 @@ proteins = ['1ozi', '2gmo', '1z9b', '2juo']
 # classes = { 'all_beta: ['1ozi'], 'alpha_beta':['2gmo', '1z9b','2juo']}
 # classes = {'all_alpha': ['2l6b', '1r36], 'all_beta: ['2jxy', '2k0q','2m68','1ozi','2lro'], 'alpha_beta':['2gmo', '1z9b', '2l4x','4bwh','2juo'], 'spl':['2lht'], 'few_ss':['2ec7']}
 
-prots_all = ['1ozi', '1r36', '2ec7', '2gmo', '2juo', '2jxy', '2k0q', '2l4x', '2l6b', '2lro', '4bwh']
+# prots_all = ['1ozi', '1r36', '2ec7', '2gmo', '2juo', '2jxy', '2k0q', '2l4x', '2l6b', '2lro', '4bwh']
 
 
 def return_idx(protein):
