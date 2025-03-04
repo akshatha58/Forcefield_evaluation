@@ -11,8 +11,8 @@ offset=$2
 ff=$3
 
 pdb=$(basename $path)
-savepath=$path/Analysis_equi/NMR_analysis
-trajpath=$path/Analysis_equi/processed_trajs
+savepath=$path/Analysis/NMR_analysis
+trajpath=$path/Analysis/processed_trajs
 dir=$(dirname $path)
 working_dir=$(pwd)
 
