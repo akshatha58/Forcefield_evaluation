@@ -20,9 +20,9 @@ Codes for implementing workflows involved in running simulations, processing tra
 1. <forcefield_name> / <pdb_id> / Analysis / basic_properties
 2. <forcefield_name> / <pdb_id> / Analysis / clusters
 3. <forcefield_name> / <pdb_id> / Analysis / processed_trajs
-4. <forcefield_name> / <pdb_id> / Analysis/ NMR_analysis
-5. <forcefield_name> / <pdb_id> / Analysis/ NMR_analysis / chem_shifts
-6. <forcefield_name> / <pdb_id> / Analysis/ NMR_analysis / J3_constants
+4. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis
+5. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis / chem_shifts
+6. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis / J3_constants
                                        
 
    
