@@ -11,6 +11,7 @@ import sys, os
 import pickle
 
 basepath=sys.argv[1]
+filename="errors_amber.pkl"
 
 sys.path.insert(0, basepath+'/../Analysis_codes/plotting_codes')
 
@@ -72,5 +73,5 @@ for protein in proteins:
     resdict[protein] = dev_resids
     print(resdict)
 
-with open('errors_amber.pkl', 'wb') as f:
+with open(filename, 'wb') as f:
      pickle.dump(resdict, f)
