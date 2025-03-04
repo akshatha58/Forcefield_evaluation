@@ -6,6 +6,7 @@ Akshatha
 Imports chemical shifts data from MD and experiment and compares them (residue-wise), with std devs
 ID  Res  N_exp  H_exp  C_exp  N_sd_exp  H_sd_exp  C_sd_exp  N_md  H_md  C_md  N_sd_md  H_sd_md  C_sd_md  ss_info
 
+python3 compare_shifts.py <path>
 """
 
 import pandas as pd
