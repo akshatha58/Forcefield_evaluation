@@ -13,16 +13,16 @@ Codes for implementing workflows involved in running simulations, processing tra
 
 ## Directory format for simulation files used in all codes:
 
-<forcefield_name> / <pdbid> / all simulation input files 
+<forcefield_name> / <pdb_id> / all simulation input files 
 
 ## Directory format created during analysis:
 
-1. <forcefield_name> / <pdbid> / Analysis / basic_properties
-2. <forcefield_name> / <pdbid> / Analysis / clusters
-3. <forcefield_name> / <pdbid> / Analysis / processed_trajs
-4. <forcefield_name> / <pdbid> / Analysis/ NMR_analysis
-5. <forcefield_name> / <pdbid> / Analysis/ NMR_analysis / chem_shifts
-6. <forcefield_name> / <pdbid> / Analysis/ NMR_analysis / J3_constants
+1. <forcefield_name> / <pdb_id> / Analysis / basic_properties
+2. <forcefield_name> / <pdb_id> / Analysis / clusters
+3. <forcefield_name> / <pdb_id> / Analysis / processed_trajs
+4. <forcefield_name> / <pdb_id> / Analysis/ NMR_analysis
+5. <forcefield_name> / <pdb_id> / Analysis/ NMR_analysis / chem_shifts
+6. <forcefield_name> / <pdb_id> / Analysis/ NMR_analysis / J3_constants
                                        
 
    
