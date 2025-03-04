@@ -2,14 +2,17 @@
 # 6 January 2025
 
 # Main code to parse, compute and plot J3 coupling constant data
+# ./run_j3_main.sh <path> <offset>
 
 path=$1
 offset=$2
 working_dir=$(pwd)
+pdb=$(basename $path)
+trajpath=$path/Analysis/processed_trajs
 
 cd .. 
 
-Parse experimental J3 coupling constant data
+# Parse experimental J3 coupling constant data
 echo "Parsing experimental coupling constants..."
 python3 parse_star.py $path J3
 
@@ -25,7 +28,7 @@ python3 j3_constants.py $path $offset
 
 # Plot deviations between NMR and MD data
 echo "Plotting and acquiring statistics for J3 constants..."
-cd /home/dynamics/akshatha/Final_simfiles/Analysis_optimised/plotting_codes
+cd $working_dir/../../plotting_codes/
 python3 compare_J3.py $path
 
 
