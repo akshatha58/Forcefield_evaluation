@@ -1,3 +1,8 @@
+"""
+dump.py and shifts.py are taken and edited from MD2NMR repository: https://github.com/dkoes/MD2NMR 
+to suit the present use case. Use the rest of the files from the MD2NMR repository
+"""
+
 #!/usr/bin/env python3
 
 '''Calculate chemical shifts of a directory of residue traces'''
