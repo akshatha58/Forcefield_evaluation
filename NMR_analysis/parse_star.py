@@ -28,6 +28,8 @@ Observable names : savefile names : category names : loop names
 
                     "T2"   : T2_relaxation_label : heteronucl_T2_relaxation : T2
                             Seq_ID, Comp_ID, Atom_ID, T2_val, T2_val_err, Rex_val, Rex_err
+                            
+python3 parse_star.py <pdbpath> <observable name>
 """
 
 import pynmrstar
