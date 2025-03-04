@@ -58,10 +58,10 @@ def get_ss_data(pdb, flag):
 
     if flag == 1:
         # Offsets are needed 
-        file_res = "/home/dynamics/akshatha/Final_simfiles/"+pdb+"/"+pdb+"_offsets.txt"
+        file_res = "../../../offset_lists/"+pdb+"_offsets.txt"
     else:
         # Offsets not needed
-        file_res = "/home/dynamics/akshatha/Final_simfiles/ss_lists"+pdb+"_ss.txt"
+        file_res = "../../../ss_lists/"+pdb+"_ss.txt"
         
     data_res = pd.read_csv(file_res)
 
