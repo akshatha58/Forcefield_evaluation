@@ -64,10 +64,10 @@ def get_ss_data(pdbpath, flag):
 
     if flag == 1:
         # Offsets are needed 
-        file_res = dir+"/"+pdb+"/"+pdb+"_offsets.txt"
+        file_res = "../../../offset_lists/"+pdb+"_offsets.txt"
     else:
-        # Offsets not needed (start from 1)
-        file_res = dir+"/ss_lists/"+pdb+"_ss.txt"
+        # Offsets not needed
+        file_res = "../../../ss_lists/"+pdb+"_ss.txt"
         
     data_res = pd.read_csv(file_res)
 
