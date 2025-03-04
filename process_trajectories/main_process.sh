@@ -34,4 +34,4 @@ then
     ./convert_fileformats_charmm.sh $pdb $pdbpath
 fi
 
-./visualise.sh $pdbpath
+# ./visualise.sh $pdbpath
