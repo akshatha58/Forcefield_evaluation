@@ -4,6 +4,8 @@ map_devs.py
 
 Maps residues that have an absolute value deviation in J3 coupling constant
 To be used in pymol functionality
+
+python3 map_devs.py <path>
 """
 import pandas as pd
 import numpy as np
@@ -30,7 +32,7 @@ def return_idx(protein):
     if protein=="1ozi":
         offset = 1
     elif protein=="2gmo":
-        offset = -8
+        offset = -7
     elif protein=="1z9b":
         offset = 1
     elif protein=="2juo":
