@@ -38,5 +38,9 @@ sed -i '1,27d' "$results_path/rg_all.xvg"
 printf "4" | $GROMACS rmsf -f md.xtc -s md.tpr -res -o $results_path/rmsf_backbone.xvg
 sed -i '1,17d' "$results_path/rmsf_backbone.xvg"
 
+# RMSDs decomposed acc to secondary structures
 ./rmsd_ss.sh $path
+
+# Clustering analysis
+./get_clusters.sh $path
 
