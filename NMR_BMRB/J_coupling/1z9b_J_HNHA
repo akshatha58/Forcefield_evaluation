@@ -1,0 +1,133 @@
+save_J_coupling_list_1
+   _Coupling_constant_list.Sf_category                   coupling_constants
+   _Coupling_constant_list.Sf_framecode                  J_coupling_list_1
+   _Coupling_constant_list.Entry_ID                      6577
+   _Coupling_constant_list.ID                            1
+   _Coupling_constant_list.Sample_condition_list_ID      1
+   _Coupling_constant_list.Sample_condition_list_label   $conditions_1
+   _Coupling_constant_list.Spectrometer_frequency_1H     700.13
+   _Coupling_constant_list.Details                       .
+   _Coupling_constant_list.Text_data_format              .
+   _Coupling_constant_list.Text_data                     .
+
+   loop_
+      _Coupling_constant_experiment.Experiment_ID
+      _Coupling_constant_experiment.Experiment_name
+      _Coupling_constant_experiment.Sample_ID
+      _Coupling_constant_experiment.Sample_label
+      _Coupling_constant_experiment.Sample_state
+      _Coupling_constant_experiment.Entry_ID
+      _Coupling_constant_experiment.Coupling_constant_list_ID
+
+      7   1H15N13C_HNHA   1   $sample_1   isotropic   6577   1
+   stop_
+
+   loop_
+      _Coupling_constant_software.Software_ID
+      _Coupling_constant_software.Software_label
+      _Coupling_constant_software.Method_ID
+      _Coupling_constant_software.Method_label
+      _Coupling_constant_software.Entry_ID
+      _Coupling_constant_software.Coupling_constant_list_ID
+
+      1   $software_1   .   .   6577   1
+   stop_
+
+   loop_
+      _Coupling_constant.ID
+      _Coupling_constant.Code
+      _Coupling_constant.Assembly_atom_ID_1
+      _Coupling_constant.Entity_assembly_ID_1
+      _Coupling_constant.Entity_ID_1
+      _Coupling_constant.Comp_index_ID_1
+      _Coupling_constant.Seq_ID_1
+      _Coupling_constant.Comp_ID_1
+      _Coupling_constant.Atom_ID_1
+      _Coupling_constant.Atom_type_1
+      _Coupling_constant.Atom_isotope_number_1
+      _Coupling_constant.Ambiguity_code_1
+      _Coupling_constant.Assembly_atom_ID_2
+      _Coupling_constant.Entity_assembly_ID_2
+      _Coupling_constant.Entity_ID_2
+      _Coupling_constant.Comp_index_ID_2
+      _Coupling_constant.Seq_ID_2
+      _Coupling_constant.Comp_ID_2
+      _Coupling_constant.Atom_ID_2
+      _Coupling_constant.Atom_type_2
+      _Coupling_constant.Atom_isotope_number_2
+      _Coupling_constant.Ambiguity_code_2
+      _Coupling_constant.Val
+      _Coupling_constant.Val_min
+      _Coupling_constant.Val_max
+      _Coupling_constant.Val_err
+      _Coupling_constant.Resonance_ID_1
+      _Coupling_constant.Resonance_ID_2
+      _Coupling_constant.Auth_entity_assembly_ID_1
+      _Coupling_constant.Auth_asym_ID_1
+      _Coupling_constant.Auth_seq_ID_1
+      _Coupling_constant.Auth_comp_ID_1
+      _Coupling_constant.Auth_atom_ID_1
+      _Coupling_constant.Auth_entity_assembly_ID_2
+      _Coupling_constant.Auth_asym_ID_2
+      _Coupling_constant.Auth_seq_ID_2
+      _Coupling_constant.Auth_comp_ID_2
+      _Coupling_constant.Auth_atom_ID_2
+      _Coupling_constant.Details
+      _Coupling_constant.Entry_ID
+      _Coupling_constant.Coupling_constant_list_ID
+
+      1    3JHNHA   .   1   1   44    44    LEU   H   H   1   .   .   1   1   44    44    LEU   HA    H   1   .   8.37   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      2    3JHNHA   .   1   1   45    45    ILE   H   H   1   .   .   1   1   45    45    ILE   HA    H   1   .   9.73   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      3    3JHNHA   .   1   1   46    46    VAL   H   H   1   .   .   1   1   46    46    VAL   HA    H   1   .   8.39   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      4    3JHNHA   .   1   1   47    47    LYS   H   H   1   .   .   1   1   47    47    LYS   HA    H   1   .   7.35   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      5    3JHNHA   .   1   1   48    48    ALA   H   H   1   .   .   1   1   48    48    ALA   HA    H   1   .   6.75   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      6    3JHNHA   .   1   1   49    49    ASP   H   H   1   .   .   1   1   49    49    ASP   HA    H   1   .   4.41   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      7    3JHNHA   .   1   1   50    50    VAL   H   H   1   .   .   1   1   50    50    VAL   HA    H   1   .   7.48   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      8    3JHNHA   .   1   1   52    52    GLY   H   H   1   .   .   1   1   52    52    GLY   HA2   H   1   .   4.92   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      9    3JHNHA   .   1   1   53    53    SER   H   H   1   .   .   1   1   53    53    SER   HA    H   1   .   6.75   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      10   3JHNHA   .   1   1   54    54    VAL   H   H   1   .   .   1   1   54    54    VAL   HA    H   1   .   4.38   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      11   3JHNHA   .   1   1   56    56    ALA   H   H   1   .   .   1   1   56    56    ALA   HA    H   1   .   4.04   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      12   3JHNHA   .   1   1   59    59    ALA   H   H   1   .   .   1   1   59    59    ALA   HA    H   1   .   3.75   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      13   3JHNHA   .   1   1   60    60    ALA   H   H   1   .   .   1   1   60    60    ALA   HA    H   1   .   4.90   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      14   3JHNHA   .   1   1   62    62    GLN   H   H   1   .   .   1   1   62    62    GLN   HA    H   1   .   4.58   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      15   3JHNHA   .   1   1   63    63    LYS   H   H   1   .   .   1   1   63    63    LYS   HA    H   1   .   7.81   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      16   3JHNHA   .   1   1   64    64    ILE   H   H   1   .   .   1   1   64    64    ILE   HA    H   1   .   4.72   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      17   3JHNHA   .   1   1   72    72    LYS   H   H   1   .   .   1   1   72    72    LYS   HA    H   1   .   8.30   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      18   3JHNHA   .   1   1   73    73    ILE   H   H   1   .   .   1   1   73    73    ILE   HA    H   1   .   7.24   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      19   3JHNHA   .   1   1   74    74    ILE   H   H   1   .   .   1   1   74    74    ILE   HA    H   1   .   8.11   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      20   3JHNHA   .   1   1   75    75    HIS   H   H   1   .   .   1   1   75    75    HIS   HA    H   1   .   6.45   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      21   3JHNHA   .   1   1   76    76    ALA   H   H   1   .   .   1   1   76    76    ALA   HA    H   1   .   6.80   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      22   3JHNHA   .   1   1   77    77    ALA   H   H   1   .   .   1   1   77    77    ALA   HA    H   1   .   7.07   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      23   3JHNHA   .   1   1   78    78    VAL   H   H   1   .   .   1   1   78    78    VAL   HA    H   1   .   6.00   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      24   3JHNHA   .   1   1   79    79    GLY   H   H   1   .   .   1   1   79    79    GLY   HA2   H   1   .   7.89   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      25   3JHNHA   .   1   1   80    80    ALA   H   H   1   .   .   1   1   80    80    ALA   HA    H   1   .   3.01   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      26   3JHNHA   .   1   1   81    81    ILE   H   H   1   .   .   1   1   81    81    ILE   HA    H   1   .   8.06   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      27   3JHNHA   .   1   1   82    82    THR   H   H   1   .   .   1   1   82    82    THR   HA    H   1   .   8.12   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      28   3JHNHA   .   1   1   85    85    ASP   H   H   1   .   .   1   1   85    85    ASP   HA    H   1   .   4.78   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      29   3JHNHA   .   1   1   86    86    ILE   H   H   1   .   .   1   1   86    86    ILE   HA    H   1   .   5.28   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      30   3JHNHA   .   1   1   87    87    SER   H   H   1   .   .   1   1   87    87    SER   HA    H   1   .   4.01   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      31   3JHNHA   .   1   1   88    88    LEU   H   H   1   .   .   1   1   88    88    LEU   HA    H   1   .   4.72   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      32   3JHNHA   .   1   1   90    90    THR   H   H   1   .   .   1   1   90    90    THR   HA    H   1   .   4.28   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      33   3JHNHA   .   1   1   91    91    ALA   H   H   1   .   .   1   1   91    91    ALA   HA    H   1   .   4.52   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      34   3JHNHA   .   1   1   92    92    SER   H   H   1   .   .   1   1   92    92    SER   HA    H   1   .   8.43   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      35   3JHNHA   .   1   1   93    93    ASN   H   H   1   .   .   1   1   93    93    ASN   HA    H   1   .   6.50   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      36   3JHNHA   .   1   1   96    96    VAL   H   H   1   .   .   1   1   96    96    VAL   HA    H   1   .   8.17   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      37   3JHNHA   .   1   1   97    97    ILE   H   H   1   .   .   1   1   97    97    ILE   HA    H   1   .   7.64   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      38   3JHNHA   .   1   1   101   101   VAL   H   H   1   .   .   1   1   101   101   VAL   HA    H   1   .   8.50   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      39   3JHNHA   .   1   1   102   102   ARG   H   H   1   .   .   1   1   102   102   ARG   HA    H   1   .   6.38   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      40   3JHNHA   .   1   1   104   104   ASP   H   H   1   .   .   1   1   104   104   ASP   HA    H   1   .   5.84   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      41   3JHNHA   .   1   1   106   106   ASN   H   H   1   .   .   1   1   106   106   ASN   HA    H   1   .   6.59   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      42   3JHNHA   .   1   1   107   107   ALA   H   H   1   .   .   1   1   107   107   ALA   HA    H   1   .   3.93   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      43   3JHNHA   .   1   1   108   108   LYS   H   H   1   .   .   1   1   108   108   LYS   HA    H   1   .   3.62   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      44   3JHNHA   .   1   1   109   109   ARG   H   H   1   .   .   1   1   109   109   ARG   HA    H   1   .   4.48   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      45   3JHNHA   .   1   1   110   110   ALA   H   H   1   .   .   1   1   110   110   ALA   HA    H   1   .   6.56   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      46   3JHNHA   .   1   1   111   111   ALA   H   H   1   .   .   1   1   111   111   ALA   HA    H   1   .   3.17   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      47   3JHNHA   .   1   1   112   112   GLU   H   H   1   .   .   1   1   112   112   GLU   HA    H   1   .   5.36   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      48   3JHNHA   .   1   1   113   113   SER   H   H   1   .   .   1   1   113   113   SER   HA    H   1   .   5.67   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      49   3JHNHA   .   1   1   114   114   GLU   H   H   1   .   .   1   1   114   114   GLU   HA    H   1   .   8.01   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      50   3JHNHA   .   1   1   115   115   LYS   H   H   1   .   .   1   1   115   115   LYS   HA    H   1   .   6.45   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      51   3JHNHA   .   1   1   118   118   ILE   H   H   1   .   .   1   1   118   118   ILE   HA    H   1   .   8.13   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      52   3JHNHA   .   1   1   119   119   ARG   H   H   1   .   .   1   1   119   119   ARG   HA    H   1   .   8.45   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+      53   3JHNHA   .   1   1   120   120   LEU   H   H   1   .   .   1   1   120   120   LEU   HA    H   1   .   7.39   .   .   2.00   .   .   .   .   .   .   .   .   .   .   .   .   .   6577   1
+   stop_
+save_
