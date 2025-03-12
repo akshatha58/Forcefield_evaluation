@@ -4,7 +4,7 @@
 
 # Update of TRA_v3. Updates the secondary structure files according to the original labels in the mmcif files. 
 
-mmcif_path=/home/dynamics/akshatha/mmcif_files
+mmcif_path=../mmcif_files
 pdb=$1
 
 ######################################################## EXTRACT HELIX AND SHEET RESIDUES FROM mmCIF FILE #############################################################################
