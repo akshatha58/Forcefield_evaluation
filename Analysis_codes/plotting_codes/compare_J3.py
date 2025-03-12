@@ -41,10 +41,13 @@ def get_statistics(path):
     whichss = ['all', 'H', 'S', 'F']
     with open(directory_path+"/"+pdb+"_statistics.txt", "w") as f: 
         f.write("res\tchi-sq\trmsd\tR-sq\trel-err\tmean_nmr\tmean_md\n")
+        # f.write("res\tchi-sq\trmsd\trel-err\tmean_nmr\tmean_md\n")
         for ss in range(len(whichss)):
-            chi_sq, rmsd, r_sq, avg_rel_err, mean_nmr, mean_md = pltfn.stats(datafile, param, whichss[ss], "J3")
+            # chi_sq, rmsd, r_sq, avg_rel_err, mean_nmr, mean_md = pltfn.stats(datafile, param, whichss[ss], "J3")
+            chi_sq, rmsd, avg_rel_err, mean_nmr, mean_md = pltfn.stats(datafile, param, whichss[ss], "J3")
             if chi_sq > 0:
-                f.write(f"{whichss[ss]}\t{chi_sq:.2f}\t{rmsd:.2f}\t{r_sq:.2f}\t{avg_rel_err:.2f}\t{mean_nmr:.2f}\t{mean_md:.2f}\n")
+                # f.write(f"{whichss[ss]}\t{chi_sq:.2f}\t{rmsd:.2f}\t{r_sq:.2f}\t{avg_rel_err:.2f}\t{mean_nmr:.2f}\t{mean_md:.2f}\n")
+                f.write(f"{whichss[ss]}\t{chi_sq:.2f}\t{rmsd:.2f}\t{avg_rel_err:.2f}\t{mean_nmr:.2f}\t{mean_md:.2f}\n")
 
     f.close()
 
