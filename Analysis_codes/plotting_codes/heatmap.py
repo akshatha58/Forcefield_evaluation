@@ -3,6 +3,10 @@ heatmap.py
 7 March 2025
 
 Constructs a heat map for statistics across proteins, force fields, and secondary structure elements
+
+python3 heatmap.py <datafile having ss, protein, and ff wise statistics>
+
+statistic = RMSD, relerr, chisq (saved as a part of the filename itself)
 """
 
 import pandas as pd
