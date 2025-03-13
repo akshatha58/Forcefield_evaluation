@@ -33,12 +33,12 @@ if [ "$what_to_analyse" == "main" ]; then
     
 # Automates Heat map generation for all protein/force field combinations
 elif ["$what_to_analyse" == "heatmap" ]; then 
-    statnames=("chisq_" "relerr_" "RMSD_")
+    statnames=("chisq" "relerr" "RMSD")
     params=("C.txt" "N.txt" "H.txt" "J3.txt")
     
     for stat in "${statnames[@]}"; do
         for param in "${params[@]}"; do
-            dir="plotting_codes/comparisons/heatmaps/$stat$param"
+            dir=$mainpath/plotting_codes/comparisons/heatmaps/$stat"_"$param
             if [ -d "$dir" ]; then
                 echo "Processing $stat - $param ..."
                 cd $mainpath/plotting_codes
