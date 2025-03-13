@@ -32,7 +32,7 @@ if [ "$what_to_analyse" == "main" ]; then
     done   
     
 # Automates Heat map generation for all protein/force field combinations
-elif ["$what_to_analyse" == "heatmap" ]; then 
+elif [ "$what_to_analyse" == "heatmap" ]; then 
     statnames=("chisq" "relerr" "RMSD")
     params=("C.txt" "N.txt" "H.txt" "J3.txt")
     
