@@ -9,6 +9,8 @@ Saves a pickle file as a dictionary: protein name mapped to an array of residue-
 Save one .pkl file for each force field/water model combination. 
 
 python3 map_devs.py <path of ff directories>
+
+NOTE: Change proteins variable to the pdb ids you are simulating. Change return_idx values to adjust the offsets of the PDB file to map the residue numbers in the relative error files. 
 """
 import pandas as pd
 import numpy as np
