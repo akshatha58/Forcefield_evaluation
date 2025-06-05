@@ -4,6 +4,13 @@ analyse_data.py
 
 Analyses N-H Correlation data to classify residues that de-correlate faster than the others
 Also analyses differences in the four force fields with respect to residue-wise correlations
+
+NOTE: 
+Change the basepath, ff list according to the naming convention you have used.
+flag = 1 plots/saves results for all force fields together. flag = 0 only saves/plots results for a single force field.
+
+python3 analyse_data.py <pdbid> <flag> <force field>
+
 """
 
 import pandas as pd
