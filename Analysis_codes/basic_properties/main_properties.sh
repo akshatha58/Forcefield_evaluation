@@ -12,8 +12,14 @@ process_trajpath=$path/Analysis/processed_trajs
 results_path=$path/Analysis/basic_properties
 GROMACS=/usr/local/gromacs/bin/gmx
 # Define paths for processed traj and top files
-# trajfile=$process_trajpath/$pdb"_md_trajmod.xtc"
-# topfile=$process_trajpath/$pdb"_firstframe.pdb"
+trajfile=$process_trajpath/$pdb"_md_trajmod.xtc"
+topfile=$process_trajpath/$pdb"_md_mod.gro"
+tprfile=$process_trajpath/$pdb"_md.tpr"
+
+energyfile=md.edr
+topol=$path/topol.top
+pdbfile=$path/$pdb.pdb
+
 
 cd $path
 
@@ -26,6 +32,10 @@ printf "23 0" | $GROMACS energy -f md.edr -o $results_path/density.xvg >> $resul
 
 # Ramachandran plot
 $GROMACS rama -f md.xtc -s md.tpr -o $results_path/rama.xvg -b 500000 -dt 5000
+
+# Compute SASA
+printf "1" | /usr/local/gromacs/bin/gmx sasa -f $trajfile -s $topfile -o $results_path/sasa.xvg -surface -tu ns -or $results_path/res_sasa.xvg
+printf "1" | /usr/local/gromacs/bin/gmx sasa -f $pdbfile -s $pdbfile -o $results_path/sasa_ref.xvg -surface -tu ns -or $results_path/res_sasa_ref.xvg
 
 # RMSD
 printf "4 4" | $GROMACS rms -f md.xtc -s md.tpr -o $results_path/rmsd.xvg -tu ns
