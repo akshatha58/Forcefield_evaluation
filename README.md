@@ -20,13 +20,13 @@ GROMACS, DSSP, mdtraj, MDAnalysis, VMD or Pymol, Biopython, nmrpystar
 <forcefield_name> / <pdb_id> / all simulation input files 
 
 ## Directory format created during analysis:
-
+0. <forcefield_name> / <pdb_id> : (stores the .mdp and trajectory files)
 1. <forcefield_name> / <pdb_id> / Analysis / basic_properties
-2. <forcefield_name> / <pdb_id> / Analysis / clusters
-3. <forcefield_name> / <pdb_id> / Analysis / processed_trajs
-4. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis
-5. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis / chem_shifts
-6. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis / J3_constants
+2. <forcefield_name> / <pdb_id> / Analysis / processed_trajs
+3. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis
+4. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis / chem_shifts
+5. <forcefield_name> / <pdb_id> / Analysis / NMR_analysis / J3_constants
+6.  <forcefield_name> / <pdb_id> / Analysis / NMR_analysis / relaxation_time
                                        
 
    
