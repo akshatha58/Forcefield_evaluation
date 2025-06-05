@@ -5,6 +5,10 @@ calc_relaxation.py
 Script to calculate N-H bond correlations from the MD trajectory. 
 
 Incorporated from the GitHub repository: https://github.com/achicks15/CorrFunction_NMRRelaxation.git with a few modifications. 
+
+NOTE: In main_implementation, cross check the names of the topology and trajectory file. 
+
+python3 calc_relaxation.py <pdbpath>
 """
 
 
