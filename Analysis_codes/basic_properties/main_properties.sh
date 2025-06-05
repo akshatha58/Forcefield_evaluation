@@ -24,11 +24,11 @@ pdbfile=$path/$pdb.pdb
 cd $path
 
 # Check indices before executing
-printf "11 0" | $GROMACS energy -f md.edr -o $results_path/potential.xvg >> $results_path/metrics.txt
-printf "13 0" | $GROMACS energy -f md.edr -o $results_path/total_energy.xvg >> $results_path/metrics.txt
-printf "15 0" | $GROMACS energy -f md.edr -o $results_path/temperature.xvg >> $results_path/metrics.txt
-printf "17 0" | $GROMACS energy -f md.edr -o $results_path/pressure.xvg >> $results_path/metrics.txt
-printf "23 0" | $GROMACS energy -f md.edr -o $results_path/density.xvg >> $results_path/metrics.txt
+$GROMACS energy -f md.edr -o $results_path/potential.xvg >> $results_path/metrics.txt
+$GROMACS energy -f md.edr -o $results_path/total_energy.xvg >> $results_path/metrics.txt
+$GROMACS energy -f md.edr -o $results_path/temperature.xvg >> $results_path/metrics.txt
+$GROMACS energy -f md.edr -o $results_path/pressure.xvg >> $results_path/metrics.txt
+$GROMACS energy -f md.edr -o $results_path/density.xvg >> $results_path/metrics.txt
 
 # Ramachandran plot
 $GROMACS rama -f md.xtc -s md.tpr -o $results_path/rama.xvg -b 500000 -dt 5000
