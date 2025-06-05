@@ -14,6 +14,7 @@ Codes for implementing workflows involved in running simulations, processing tra
    Two separate repositories are created, one each for Amber and CHARMM (MD2NMR_amber and MD2NMR_charmm). dump.py and shifts.py have been modified to suit the use cases in this study. Get the other files and dictionaries from the above repository into each of these folders.
 4. mmcif_files: Stores secondary structure information obtained from DSSP (<pdbid>.mmcif), along with processed secondary structure assignments as <pdbid>_sslists.txt. Crosscheck if empty rows in the middle have 0, else the assignments will be incorrect.
 5. FASTA_Seqs: Has the FASTA sequences of all proteins (<pdbid>.txt)
+6. CHARMM36m force field directory (or the directory of the force field you intend to use, if it is not present within GROMACS) 
 
 ## Softwares/libraries required
 GROMACS, DSSP, mdtraj, MDAnalysis, VMD or Pymol, Biopython, nmrpystar
